@@ -1,5 +1,5 @@
 Anggota :
-1. Aditya Wahyu Ningrat
+1. Adit wn
 2. Syahrul Himawan
 3. Jack
 4. RafiAD
