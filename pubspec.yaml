@@ -1,0 +1,31 @@
+name: flutter_app
+description: A new Flutter project.
+
+publish_to: "none" # agar tidak publish ke pub.dev
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client untuk request API
+  http: ^0.13.6
+
+  # Paket untuk akses file system
+  path_provider: ^2.0.15
+
+  # Paket PDF generator dan printing
+  pdf: ^3.9.0
+  printing: ^5.10.4
+
+  # Paket untuk share file / text ke app lain (WA, email, dll)
+  share_plus: ^11.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
