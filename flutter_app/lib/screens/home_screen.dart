@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'log_screen.dart'; // Import the LogScreen
 
 class HomeScreen extends StatefulWidget {
   final Function(bool)? onThemeChanged;
@@ -85,17 +86,16 @@ class _HomeScreenState extends State<HomeScreen> {
   void _showError(String msg) {
     showDialog(
       context: context,
-      builder:
-          (_) => AlertDialog(
-            title: Text('Error'),
-            content: Text(msg),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: Text('OK'),
-              ),
-            ],
+      builder: (_) => AlertDialog(
+        title: Text('Error'),
+        content: Text(msg),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('OK'),
           ),
+        ],
+      ),
     );
   }
 
@@ -149,12 +149,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 labelText: 'Opsi Nmap default',
                 border: OutlineInputBorder(),
               ),
-              items:
-                  _nmapOptions
-                      .map(
-                        (opt) => DropdownMenuItem(value: opt, child: Text(opt)),
-                      )
-                      .toList(),
+              items: _nmapOptions
+                  .map(
+                    (opt) => DropdownMenuItem(value: opt, child: Text(opt)),
+                  )
+                  .toList(),
               onChanged: (val) {
                 if (val != null) {
                   setState(() => _selectedOption = val);
@@ -179,6 +178,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: CircularProgressIndicator(),
               ),
+            SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LogScreen()),
+                );
+              },
+              child: Text('Lihat Riwayat Scan'),
+            ),
           ],
         ),
       ),
