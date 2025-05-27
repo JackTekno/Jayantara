@@ -1,4 +1,4 @@
-# Install script for directory: /home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download
+# Install script for directory: /home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

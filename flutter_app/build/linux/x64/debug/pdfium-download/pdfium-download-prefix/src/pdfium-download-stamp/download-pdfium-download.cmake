@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'")
+       file='/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'")
 
-  file("" "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz" actual_value)
+  file("" "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS " hash of
-    /home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz
+    /home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz" STREQUAL "")
+if("/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,91 +79,80 @@ if("https://github.com/bblanchon/pdfium-binaries/releases/download/chromium/5200
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
+if(EXISTS "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
+  file='/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
   =''"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
+      file(REMOVE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
+  file='/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
+    file(REMOVE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
-   timeout='none'
-   inactivity timeout='none'"
+   dst='/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz'
+   timeout='none'"
 )
-set(download_retry_codes 7 6 8 15 28)
-set(skip_url_list)
-set(status_code)
+
 foreach(i RANGE ${retry_number})
-  if(status_code IN_LIST download_retry_codes)
-    sleep_before_download(${i})
-  endif()
+  sleep_before_download(${i})
+
   foreach(url https://github.com/bblanchon/pdfium-binaries/releases/download/chromium/5200/pdfium-linux-x64.tgz)
-    if(NOT url IN_LIST skip_url_list)
-      message(STATUS "Using src='${url}'")
+    message(STATUS "Using src='${url}'")
 
-      
-      
-      
-      
+    
+    
+    
+    
 
-      file(
+    file(
         DOWNLOAD
-        "${url}" "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz"
+        "${url}" "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz"
         SHOW_PROGRESS
         # no TIMEOUT
-        # no INACTIVITY_TIMEOUT
         STATUS status
         LOG log
         
         
-        )
+    )
 
-      list(GET status 0 status_code)
-      list(GET status 1 status_string)
+    list(GET status 0 status_code)
+    list(GET status 1 status_string)
 
-      if(status_code EQUAL 0)
-        check_file_hash(has_hash hash_is_good)
-        if(has_hash AND NOT hash_is_good)
-          message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
-        else()
-          message(STATUS "Downloading... done")
-          return()
-        endif()
+    if(status_code EQUAL 0)
+      check_file_hash(has_hash hash_is_good)
+      if(has_hash AND NOT hash_is_good)
+        message(STATUS "Hash mismatch, removing...")
+        file(REMOVE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-download/pdfium-download-prefix/src/pdfium-linux-x64.tgz")
       else()
-        string(APPEND logFailedURLs "error: downloading '${url}' failed
-        status_code: ${status_code}
-        status_string: ${status_string}
-        log:
-        --- LOG BEGIN ---
-        ${log}
-        --- LOG END ---
-        "
-        )
-      if(NOT status_code IN_LIST download_retry_codes)
-        list(APPEND skip_url_list "${url}")
-        break()
+        message(STATUS "Downloading... done")
+        return()
       endif()
+    else()
+      string(APPEND logFailedURLs "error: downloading '${url}' failed
+       status_code: ${status_code}
+       status_string: ${status_string}
+       log:
+       --- LOG BEGIN ---
+       ${log}
+       --- LOG END ---
+       "
+      )
     endif()
-  endif()
   endforeach()
 endforeach()
 

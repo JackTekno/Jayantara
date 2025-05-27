@@ -1,8 +1,8 @@
-# Install script for directory: /home/natta/jayantara_scanner/flutter_app/linux
+# Install script for directory: /home/jack/Github/Jayantara/flutter_app/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,141 +37,136 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/")
+  file(REMOVE_RECURSE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/")
   
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app"
+         FILE "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app"
          RPATH "$ORIGIN/lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/intermediates_do_not_run/flutter_app")
-  if(EXISTS "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/intermediates_do_not_run/flutter_app")
+  if(EXISTS "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app"
-         OLD_RPATH "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/printing:/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux:/home/natta/jayantara_scanner/flutter_app/linux/flutter/ephemeral:/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-src/lib:"
+         FILE "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app"
+         OLD_RPATH "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/printing:/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux:/home/jack/Github/Jayantara/flutter_app/linux/flutter/ephemeral:/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-src/lib:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/flutter_app")
+      execute_process(COMMAND "/snap/flutter/current/usr/bin/strip" "$ENV{DESTDIR}/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     endif()
   endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/data/icudtl.dat")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/data/icudtl.dat")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/natta/jayantara_scanner/flutter_app/linux/flutter/ephemeral/icudtl.dat")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/jack/Github/Jayantara/flutter_app/linux/flutter/ephemeral/icudtl.dat")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/natta/jayantara_scanner/flutter_app/linux/flutter/ephemeral/libflutter_linux_gtk.so")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/jack/Github/Jayantara/flutter_app/linux/flutter/ephemeral/libflutter_linux_gtk.so")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib/libprinting_plugin.so")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib/libprinting_plugin.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/printing/libprinting_plugin.so")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/printing/libprinting_plugin.so")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib/libpdfium.so")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib/libpdfium.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-src/lib/libpdfium.so")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/pdfium-src/lib/libpdfium.so")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux/liburl_launcher_linux_plugin.so")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux/liburl_launcher_linux_plugin.so")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib/")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/natta/jayantara_scanner/flutter_app/build/native_assets/linux/")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/jack/Github/Jayantara/flutter_app/build/native_assets/linux/")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
+  file(REMOVE_RECURSE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
   
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
+   "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/natta/jayantara_scanner/flutter_app/build//flutter_assets")
+file(INSTALL DESTINATION "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/jack/Github/Jayantara/flutter_app/build//flutter_assets")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/flutter/cmake_install.cmake")
-  include("/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/runner/cmake_install.cmake")
-  include("/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/printing/cmake_install.cmake")
-  include("/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux/cmake_install.cmake")
+  include("/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/flutter/cmake_install.cmake")
+  include("/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/runner/cmake_install.cmake")
+  include("/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/printing/cmake_install.cmake")
+  include("/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/plugins/url_launcher_linux/cmake_install.cmake")
 
 endif()
 
@@ -183,5 +178,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

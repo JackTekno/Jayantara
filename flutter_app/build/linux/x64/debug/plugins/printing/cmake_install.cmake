@@ -1,8 +1,8 @@
-# Install script for directory: /home/natta/jayantara_scanner/flutter_app/linux/flutter/ephemeral/.plugin_symlinks/printing/linux
+# Install script for directory: /home/jack/Github/Jayantara/flutter_app/linux/flutter/ephemeral/.plugin_symlinks/printing/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/jack/Github/Jayantara/flutter_app/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,10 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
