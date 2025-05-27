@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel # type: ignore
+from pydantic import BaseModel
 from subprocess import run, PIPE
 import re
 import datetime
@@ -71,9 +71,22 @@ def scan_target(request: ScanRequest):
         parsed = parse_nmap_output(result.stdout)
         parsed["target"] = request.target
 
-        save_log(parsed)  # Simpan hasil scan ke file
+        save_log(parsed)
 
         return parsed
 
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/logs")
+def get_logs():
+    log_dir = "logs"
+    logs = []
+    try:
+        for filename in os.listdir(log_dir):
+            if filename.endswith(".json"):
+                with open(os.path.join(log_dir, filename), "r") as f:
+                    logs.append(json.load(f))
+        return logs
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
