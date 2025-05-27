@@ -1,0 +1,37 @@
+{
+  "ip": "172.67.190.175",
+  "status": "up",
+  "ports": [
+    {
+      "port": 80,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "http",
+      "version": "Cloudflare http proxy"
+    },
+    {
+      "port": 443,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "ssl/http",
+      "version": "Cloudflare http proxy"
+    },
+    {
+      "port": 8080,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "http",
+      "version": "Cloudflare http proxy"
+    },
+    {
+      "port": 8443,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "ssl/http",
+      "version": "Cloudflare http proxy"
+    }
+  ],
+  "timestamp": "2025-05-20T18:21:07.129995",
+  "host": "siberin.id",
+  "target": "siberin.id"
+}

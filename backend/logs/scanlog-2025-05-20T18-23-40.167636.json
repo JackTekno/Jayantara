@@ -1,0 +1,23 @@
+{
+  "ip": "120.29.231.65",
+  "status": "up",
+  "ports": [
+    {
+      "port": 80,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "http",
+      "version": "Apache httpd"
+    },
+    {
+      "port": 443,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "ssl/http",
+      "version": "Apache httpd"
+    }
+  ],
+  "timestamp": "2025-05-20T18:23:40.167636",
+  "host": "jogja.polri.go.id",
+  "target": "jogja.polri.go.id"
+}

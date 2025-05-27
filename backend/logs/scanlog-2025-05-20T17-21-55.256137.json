@@ -1,0 +1,58 @@
+{
+  "ip": "103.247.15.33",
+  "status": "up",
+  "ports": [
+    {
+      "port": 25,
+      "protocol": "tcp",
+      "state": "filtered",
+      "service": "smtp",
+      "version": "-"
+    },
+    {
+      "port": 53,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "domain",
+      "version": "(generic dns response: NOTIMP)"
+    },
+    {
+      "port": 139,
+      "protocol": "tcp",
+      "state": "filtered",
+      "service": "netbios-ssn",
+      "version": "-"
+    },
+    {
+      "port": 445,
+      "protocol": "tcp",
+      "state": "filtered",
+      "service": "microsoft-ds",
+      "version": "-"
+    },
+    {
+      "port": 646,
+      "protocol": "tcp",
+      "state": "filtered",
+      "service": "ldp",
+      "version": "-"
+    },
+    {
+      "port": 2000,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "bandwidth-test",
+      "version": "MikroTik bandwidth-test server"
+    },
+    {
+      "port": 5678,
+      "protocol": "tcp",
+      "state": "filtered",
+      "service": "rrac",
+      "version": "-"
+    }
+  ],
+  "timestamp": "2025-05-20T17:21:55.256137",
+  "host": "unjaya.ac.id",
+  "target": "unjaya.ac.id"
+}
