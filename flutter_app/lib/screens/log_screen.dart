@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'scan_detail_screen.dart'; // Import the ScanDetailScreen
 
 class LogScreen extends StatefulWidget {
   @override
@@ -68,7 +69,12 @@ class _LogScreenState extends State<LogScreen> {
                         title: Text('Target: ${log['target']}'),
                         subtitle: Text('Timestamp: ${log['timestamp']}'),
                         onTap: () {
-                          // Navigate to detailed view if needed
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ScanDetailScreen(scanDetail: log),
+                            ),
+                          );
                         },
                       ),
                     );
