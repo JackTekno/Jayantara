@@ -1,0 +1,3 @@
+/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/CMakeFiles/pdfium-download.dir
+/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/CMakeFiles/edit_cache.dir
+/home/natta/jayantara_scanner/flutter_app/build/linux/x64/debug/pdfium-download/CMakeFiles/rebuild_cache.dir
