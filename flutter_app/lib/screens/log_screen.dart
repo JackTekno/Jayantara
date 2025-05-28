@@ -25,6 +25,8 @@ class _LogScreenState extends State<LogScreen> {
       if (response.statusCode == 200) {
         setState(() {
           _logs = jsonDecode(response.body);
+          // Sort logs by timestamp in descending order
+          _logs.sort((a, b) => DateTime.parse(b['timestamp']).compareTo(DateTime.parse(a['timestamp'])));
         });
       } else {
         _showError('Gagal mengambil riwayat scan.');
